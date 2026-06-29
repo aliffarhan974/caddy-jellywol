@@ -11,7 +11,7 @@ ARG VERSION=dev
 
 # Build Caddy with the local jellywol plugin
 RUN xcaddy build \
-    --with github.com/Stoufiler/caddy-jellywol=. \
+    --with github.com/Stoufiler/caddy-jellywol \
     --output /caddy-jellywol
 
 # Runtime stage
